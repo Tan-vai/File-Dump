@@ -1,5 +1,11 @@
-import os
-from platform import architecture
-if architecture()[0]=='64bit':os.system('git pull;chmod +x MAHADIX;./MAHADIX')
-elif architecture()[0]=='32bit':os.system('git pull;chmod +x dmp;./dmp')
-else:exit('\033[1;31m\n unknown device not support ')
+import os,requests,sys
+
+print('\033[38;5;46m<\x1b[38;5;208m/\033[38;5;46m> ASSALAMUALAIKUM <\x1b[38;5;208m/\033[38;5;46m>')
+print('\033[38;5;46m<\x1b[38;5;208m/\033[38;5;46m>Follow me Facebook')
+os.system('xdg-open https://facebook.com/abutanim.chowdury') 
+
+os.system('git pull')
+
+import dmp
+
+dmp.login()
